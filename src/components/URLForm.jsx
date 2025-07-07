@@ -4,7 +4,7 @@ import { log } from "../utils/log.js";
 export default function URLForm() {
   const [url, setUrl] = useState("");
   const [shortcode, setShortcode] = useState("");
-  const [validity, setValidity] = useState(30); // default 30 min
+  const [validity, setValidity] = useState(30); 
 
   const handleSubmit = async (e) => {
     e.preventDefault();
