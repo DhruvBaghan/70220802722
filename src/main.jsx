@@ -1,7 +1,15 @@
-import { createRoot } from 'react-dom/client'
-import './index.css'
+// src/main.jsx
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
+import './index.css'
+import { log } from './utils/log.js'
 
-createRoot(document.getElementById('root')).render(
+// Log from the first function — app entry point
+log("frontend", "info", "component", "App is starting up");
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
     <App />
+  </React.StrictMode>,
 )
